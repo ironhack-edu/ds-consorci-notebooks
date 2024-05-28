@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Day Charge <= 1.555\nentropy = 0.597\nsamples = 3333\nvalue = [2850, 483]"] ;
+1 [label="CustServ Calls <= 1.473\nentropy = 0.512\nsamples = 3122\nvalue = [2766, 356]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Int'l Plan <= 1.363\nentropy = 0.401\nsamples = 2871\nvalue = [2642, 229]"] ;
+1 -> 2 ;
+3 [label="entropy = 0.283\nsamples = 2604\nvalue = [2476, 128]"] ;
+2 -> 3 ;
+4 [label="entropy = 0.957\nsamples = 267\nvalue = [166, 101]"] ;
+2 -> 4 ;
+5 [label="Day Charge <= -0.359\nentropy = 1.0\nsamples = 251\nvalue = [124, 127]"] ;
+1 -> 5 ;
+6 [label="entropy = 0.55\nsamples = 102\nvalue = [13, 89]"] ;
+5 -> 6 ;
+7 [label="entropy = 0.819\nsamples = 149\nvalue = [111, 38]"] ;
+5 -> 7 ;
+8 [label="VMail Message <= -0.117\nentropy = 0.97\nsamples = 211\nvalue = [84, 127]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Eve Mins <= -0.261\nentropy = 0.785\nsamples = 158\nvalue = [37, 121]"] ;
+8 -> 9 ;
+10 [label="entropy = 0.989\nsamples = 57\nvalue = [32, 25]"] ;
+9 -> 10 ;
+11 [label="entropy = 0.284\nsamples = 101\nvalue = [5, 96]"] ;
+9 -> 11 ;
+12 [label="Int'l Plan <= 1.363\nentropy = 0.51\nsamples = 53\nvalue = [47, 6]"] ;
+8 -> 12 ;
+13 [label="entropy = 0.154\nsamples = 45\nvalue = [44, 1]"] ;
+12 -> 13 ;
+14 [label="entropy = 0.954\nsamples = 8\nvalue = [3, 5]"] ;
+12 -> 14 ;
+}

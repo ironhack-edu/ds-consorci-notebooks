@@ -1,0 +1,19 @@
+digraph Tree {
+0 [label="X[1] <= 3.0419\ngini = 0.444444444444\nsamples = 30", shape="box"] ;
+1 [label="gini = 0.0000\nsamples = 11\nvalue = [  0.  11.]", shape="box"] ;
+0 -> 1 ;
+2 [label="X[0] <= 6.2545\ngini = 0.498614958449\nsamples = 19", shape="box"] ;
+0 -> 2 ;
+3 [label="X[1] <= 7.3181\ngini = 0.165289256198\nsamples = 11", shape="box"] ;
+2 -> 3 ;
+4 [label="gini = 0.0000\nsamples = 9\nvalue = [ 9.  0.]", shape="box"] ;
+3 -> 4 ;
+5 [label="X[0] <= 4.8971\ngini = 0.5\nsamples = 2", shape="box"] ;
+3 -> 5 ;
+6 [label="gini = 0.0000\nsamples = 1\nvalue = [ 1.  0.]", shape="box"] ;
+5 -> 6 ;
+7 [label="gini = 0.0000\nsamples = 1\nvalue = [ 0.  1.]", shape="box"] ;
+5 -> 7 ;
+8 [label="gini = 0.0000\nsamples = 8\nvalue = [ 0.  8.]", shape="box"] ;
+2 -> 8 ;
+}
